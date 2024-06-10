@@ -30,7 +30,7 @@ def bark_with_validation():
     3. If the user enters an invalid age, the string, "Age error!", must be printed and nothing else.  An invalid age is any input that is not an integer between 0 and 15, inclusive.
     4. If the user enters an invalid breed, the string, "Breed error!", must be printed and nothing else.  An invalid breed is any breed that is not in the list, ["Schnauzer", "Terrier", "Poodle", "Mastiff"]
   """
-  name_dog=input("dog's name: ")
+  name_dog=input("dog's name: ").strip()
   age_dog=input("dog's age: ")
   breed_dog=input("dog's breed: ")
   len_name=len(name_dog)
